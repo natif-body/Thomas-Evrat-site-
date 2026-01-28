@@ -436,18 +436,16 @@
             transform: scale(1.05);
         }
 
-        .about-photo-item::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.7) 100%);
+        .about-photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .about-photo-large {
             grid-column: 1 / -1;
+            min-height: 400px;
         }
 
         .about-image {
@@ -1453,12 +1451,7 @@
                     <p>Grâce au service à la personne, vous bénéficiez de 50% de réduction immédiate. Vous êtes prélevé directement du prix final, sans attendre votre déclaration d'impôts !</p>
                 </div>
                 <div style="min-width: 150px; text-align: center;">
-                    <div style="background: #fff; border-radius: 15px; padding: 1.5rem; display: inline-block; box-shadow: 0 5px 20px rgba(0,0,0,0.3);">
-                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🏠</div>
-                        <div style="color: #0055A4; font-weight: 900; font-size: 1.1rem; line-height: 1.3;">SERVICES<br>À LA<br>PERSONNE</div>
-                        <div style="width: 40px; height: 3px; background: #e63946; margin: 0.5rem auto;"></div>
-                        <div style="color: #e63946; font-weight: 700; font-size: 0.9rem;">-50%</div>
-                    </div>
+                    <img src="Services-a-la-personne-SAP_0.jpg" alt="Service à la personne - Crédit d'impôt 50%" style="max-height: 150px; width: auto; border-radius: 10px;">
                 </div>
             </div>
 

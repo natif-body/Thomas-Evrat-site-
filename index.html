@@ -445,7 +445,11 @@
 
         .about-photo-large {
             grid-column: 1 / -1;
-            min-height: 400px;
+            height: 450px;
+        }
+
+        .about-photo-item:not(.about-photo-large) {
+            height: 300px;
         }
 
         .about-image {
@@ -1053,6 +1057,13 @@
 
             .hero {
                 margin-top: 100px !important;
+                height: auto;
+                min-height: 100vh;
+                padding: 2rem 1rem;
+            }
+
+            .about-content {
+                gap: 2rem;
             }
 
             .about-photos {
@@ -1061,10 +1072,11 @@
 
             .about-photo-large {
                 grid-column: span 1;
+                height: 300px;
             }
 
-            .about-photo-item img {
-                height: auto !important;
+            .about-photo-item:not(.about-photo-large) {
+                height: 250px;
             }
 
             .gallery-grid {
@@ -1072,7 +1084,7 @@
             }
 
             .footer-info-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
                 text-align: center;
             }
 
@@ -1080,26 +1092,45 @@
                 align-items: center;
             }
 
+            .section-title {
+                font-size: 2.2rem;
+            }
+
             .section-subtitle {
                 font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            section {
+                padding: 5rem 1.5rem;
             }
 
             .etapes-container {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
             }
 
             .avantages-grid {
                 grid-template-columns: 1fr 1fr;
             }
 
-            .contact-detail-grid {
-                grid-template-columns: 1fr !important;
+            .credit-impot {
+                flex-direction: column !important;
+                text-align: center !important;
+            }
+
+            .credit-impot img {
+                max-height: 100px !important;
             }
         }
 
         @media (max-width: 480px) {
             .logo {
                 height: 60px !important;
+            }
+
+            .hero {
+                margin-top: 80px !important;
             }
 
             .hero h1 {
@@ -1110,8 +1141,17 @@
                 font-size: 1rem;
             }
 
+            .hero p {
+                font-size: 0.95rem;
+            }
+
             .section-title {
                 font-size: 1.6rem;
+                letter-spacing: 1px;
+            }
+
+            section {
+                padding: 3.5rem 1rem;
             }
 
             .gallery-grid {
@@ -1122,8 +1162,36 @@
                 grid-template-columns: 1fr;
             }
 
+            .etapes-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-info-grid {
+                grid-template-columns: 1fr;
+            }
+
             nav a {
                 font-size: 1.1rem;
+            }
+
+            .about-photo-large {
+                height: 250px;
+            }
+
+            .about-photo-item:not(.about-photo-large) {
+                height: 200px;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .tarif-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .price {
+                font-size: 2.5rem;
             }
         }
 
@@ -1296,13 +1364,13 @@
                 
                 <div class="about-photos">
                     <div class="about-photo-item about-photo-large">
-                        <img src="5.jpg" alt="Thomas Evrat - Coaching à domicile" style="width: 100%; height: 400px; object-fit: cover; object-position: center center; display: block;">
+                        <img src="Thomas-CoachLyon-HD09.jpg" alt="Thomas Evrat - Coach sportif" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
                     </div>
                     <div class="about-photo-item">
-                        <img src="3.jpeg" alt="Transformation 90 jours" style="width: 100%; height: auto; display: block;">
+                        <img src="3.jpeg" alt="Transformation 90 jours" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     <div class="about-photo-item">
-                        <img src="4.jpg" alt="Thomas et Pierre - coaching à domicile" style="width: 100%; height: auto; display: block;">
+                        <img src="5.jpg" alt="Thomas Evrat - Coaching à domicile" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                 </div>
             </div>

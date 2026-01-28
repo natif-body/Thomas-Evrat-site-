@@ -23,7 +23,7 @@
         header {
             background: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(20px);
-            padding: 1.5rem 0;
+            padding: 1.8rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -108,7 +108,7 @@
 
         /* Hero Section */
         .hero {
-            margin-top: 150px;
+            margin-top: 180px;
             height: 100vh;
             /* REMPLACEZ par votre photo de couverture */
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="%23333" stroke-width="1"/></pattern></defs><rect fill="%23111" width="1920" height="1080"/><rect fill="url(%23grid)" width="1920" height="1080"/></svg>');
@@ -1044,6 +1044,89 @@
             .tarifs-grid {
                 grid-template-columns: 1fr;
             }
+
+            .logo {
+                height: 80px !important;
+            }
+
+            header {
+                padding: 0.8rem 0;
+            }
+
+            .hero {
+                margin-top: 100px !important;
+            }
+
+            .about-photos {
+                grid-template-columns: 1fr;
+            }
+
+            .about-photo-large {
+                grid-column: span 1;
+            }
+
+            .about-photo-item img {
+                height: auto !important;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-info-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-links-vertical {
+                align-items: center;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .etapes-container {
+                grid-template-columns: 1fr;
+            }
+
+            .avantages-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-detail-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                height: 60px !important;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .avantages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                font-size: 1.1rem;
+            }
         }
 
         @media (min-width: 769px) {
@@ -1063,7 +1146,7 @@
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <img src="Logo E.I. EVRAT (fond noir).PNG" alt="Evrat Thomas - Coach sportif à domicile" class="logo" style="height: 110px; width: auto;">
+                <img src="Logo E.I. EVRAT (fond noir).PNG" alt="Evrat Thomas - Coach sportif à domicile" class="logo" style="height: 140px; width: auto;">
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Menu">
                 <span></span>
@@ -1215,7 +1298,7 @@
                 
                 <div class="about-photos">
                     <div class="about-photo-item about-photo-large">
-                        <img src="Thomas-CoachLyon-HD09.jpg" alt="Thomas Evrat - Coach sportif" style="width: 100%; height: auto; display: block;">
+                        <img src="Thomas-CoachLyon-HD09.jpg" alt="Thomas Evrat - Coach sportif" style="width: 100%; height: 400px; object-fit: cover; object-position: center top; display: block;">
                     </div>
                     <div class="about-photo-item">
                         <img src="3.jpeg" alt="Transformation 90 jours" style="width: 100%; height: auto; display: block;">

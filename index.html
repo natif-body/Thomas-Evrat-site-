@@ -112,30 +112,31 @@
             top: 180px;
             left: 0;
             right: 0;
-            background: #1a1a1a;
-            padding: 0.6rem 2rem;
+            background: #111;
+            padding: 0.8rem 1rem;
             text-align: center;
             z-index: 999;
-            border-bottom: 1px solid #333;
             display: flex;
             justify-content: center;
-            gap: 3rem;
+            align-items: center;
+            gap: 2.5rem;
+            flex-wrap: nowrap;
+            white-space: nowrap;
         }
 
         .cta-banner a {
-            color: #fff;
+            color: #ccc;
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-size: 0.85rem;
+            font-weight: 400;
             transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
         }
 
         .cta-banner a:hover {
             color: #e63946;
-        }
-
-        .cta-banner a span {
-            margin-right: 0.5rem;
         }
 
         /* Hero Section */
@@ -1015,21 +1016,16 @@
 
             .cta-banner {
                 top: 140px;
-                padding: 0.5rem 1rem;
-                gap: 1.5rem;
-                flex-wrap: wrap;
+                padding: 0.6rem 0.5rem;
+                gap: 1.2rem;
             }
 
             .cta-banner a {
-                font-size: 0.8rem;
-            }
-
-            .cta-banner span {
-                display: none;
+                font-size: 0.75rem;
             }
 
             .hero {
-                margin-top: 190px !important;
+                margin-top: 185px !important;
                 height: auto;
                 background-attachment: scroll;
             }
@@ -1312,9 +1308,9 @@
 
     <!-- CTA Banner -->
     <div class="cta-banner">
-        <a href="https://calendly.com/thomas-evrat-coach/30min" target="_blank"><span>📅</span>Prendre rendez-vous</a>
-        <a href="tel:0627142453"><span>📞</span>06 27 14 24 53</a>
-        <a href="mailto:thomas@evrat-coach.fr"><span>✉️</span>thomas@evrat-coach.fr</a>
+        <a href="https://calendly.com/thomas-evrat-coach/30min" target="_blank">📅 Prendre rendez-vous</a>
+        <a href="tel:0627142453">📞 06 27 14 24 53</a>
+        <a href="mailto:thomas@evrat-coach.fr">✉️ Email</a>
     </div>
 
     <script>

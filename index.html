@@ -112,40 +112,30 @@
             top: 180px;
             left: 0;
             right: 0;
-            background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
-            padding: 0.7rem 2rem;
+            background: #1a1a1a;
+            padding: 0.6rem 2rem;
             text-align: center;
             z-index: 999;
-            border-bottom: 1px solid #e63946;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
         }
 
         .cta-banner a {
             color: #fff;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
         }
 
         .cta-banner a:hover {
             color: #e63946;
         }
 
-        .cta-banner .cta-btn {
-            display: inline-block;
-            background: #e63946;
-            color: #fff;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            margin-left: 1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .cta-banner .cta-btn:hover {
-            background: #fff;
-            color: #e63946;
+        .cta-banner a span {
+            margin-right: 0.5rem;
         }
 
         /* Hero Section */
@@ -1025,15 +1015,17 @@
 
             .cta-banner {
                 top: 140px;
-                padding: 0.6rem 1rem;
+                padding: 0.5rem 1rem;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .cta-banner a {
+                font-size: 0.8rem;
             }
 
             .cta-banner span {
                 display: none;
-            }
-
-            .cta-banner .cta-btn {
-                margin-left: 0;
             }
 
             .hero {
@@ -1208,12 +1200,12 @@
 
             .cta-banner {
                 top: 80px;
-                padding: 0.5rem 1rem;
+                padding: 0.4rem 0.5rem;
+                gap: 1rem;
             }
 
-            .cta-banner .cta-btn {
-                font-size: 0.85rem;
-                padding: 0.4rem 1rem;
+            .cta-banner a {
+                font-size: 0.75rem;
             }
 
             .hero {
@@ -1320,8 +1312,9 @@
 
     <!-- CTA Banner -->
     <div class="cta-banner">
-        <span>Prêt à transformer votre vie ?</span>
-        <a href="https://calendly.com/thomas-evrat-coach/30min" class="cta-btn" target="_blank">Prendre rendez-vous</a>
+        <a href="https://calendly.com/thomas-evrat-coach/30min" target="_blank"><span>📅</span>Prendre rendez-vous</a>
+        <a href="tel:0627142453"><span>📞</span>06 27 14 24 53</a>
+        <a href="mailto:thomas@evrat-coach.fr"><span>✉️</span>thomas@evrat-coach.fr</a>
     </div>
 
     <script>
